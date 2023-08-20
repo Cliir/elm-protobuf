@@ -31,3 +31,7 @@ tar -zcvf ./bin/${OUT}.tar.gz ./bin/${OUT}
 OUT=elm-protobuf-${VERSION}-osx-x86_64
 GOOS=darwin GOARCH=amd64 go build -o ./bin/${OUT}/${BIN} ./${BIN}
 tar -zcvf ./bin/${OUT}.tar.gz ./bin/${OUT}
+
+OUT=elm-protobuf-${VERSION}-osx-arm64
+GOOS=darwin GOARCH=arm64 go build -o ./bin/${OUT}/${BIN} ./${BIN}
+tar -zcvf ./bin/${OUT}.tar.gz ./bin/${OUT}
